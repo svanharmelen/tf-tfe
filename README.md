@@ -1,8 +1,8 @@
 # tf-tfe
-Working example for migrating TF to TFE
+Working example for migrating Terraform Open Source (TF OSS) to Terraform Enterprise (TFE)
 
 _NOTE: This is a working example for bulk migrating from TF OSS to TFE. The
-example assumes state is currently stored in S3 and Bitbucket is used as VCS.
+example assumes state is currently stored in S3 and that Bitbucket is used as VCS.
 Please note that this example does not come with any unit tests and is not
 officially supported!_
 
@@ -79,7 +79,7 @@ The input file must be a CSV file that contains the following fields:
   * repo - Bitbucket repository hosting the Terraform configuration files
   * branch - Bitbucket branch to use
   * backend - Terraform configuration file that contains the S3 backend config
-  * worspace - Name of the new TFE workspace for this Terraform configuration
+  * workspace - Name of the new TFE workspace for this Terraform configuration
 
 Please see `example.csv` in this repo as a very simple example input file.
 
