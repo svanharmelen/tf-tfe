@@ -10,13 +10,13 @@ officially supported!_
 
 Installation can be done with a normal `go get`:
 
-```
+```sh
 $ go get github.com/svanharmelen/tf-tfe
 ```
 
 Once installed you can execute the program:
 
-```
+```sh
 $ tf-tfe -h
 Usage of tf-tfe:
   -input string
@@ -40,7 +40,7 @@ credentials.
 
 To configure the S3 client export the usual AWS environment variables:
 
-```
+```sh
 $ export AWS_ACCESS_KEY_ID=AKID
 $ export AWS_SECRET_ACCESS_KEY=SECRET
 $ export AWS_REGION=us-east-1
@@ -50,7 +50,7 @@ $ export AWS_REGION=us-east-1
 
 To set a custom address and to provide a token, export the following variables:
 
-```
+```sh
 $ export BITBUCKET_ADDRESS=https://bitbucket.company.com
 $ export BITBUCKET_TOKEN=MDM0MjM5NDc2MDxxxxxxxxxxxxxxxxxxxxx
 ```
@@ -62,7 +62,7 @@ BITBUCKET_ADDRESS defaults to https://bitbucket.org if not provided.
 To configure a custom (PTFE) endpoint and your token, export the following
 environment variables:
 
-```
+```sh
 $ export TFE_ADDRESS=https://ptfe.company.com
 $ export TFE_TOKEN=your-personal-token
 ```
